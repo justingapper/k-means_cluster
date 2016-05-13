@@ -1,7 +1,4 @@
-# -*- coding: utf-8 -*-
 """
-Created on Fri Apr 8 16:21:41 2016
-
 @author: jgapper
 """
 
@@ -11,10 +8,9 @@ import pandas as pd
 import random
 
 # import data
-dat = np.genfromtxt('C:\Users\jgapper\Desktop\CSDS\CS530\Assignment4\iris.csv', delimiter=',')
+dat = np.genfromtxt('C:\iris.csv', delimiter=',')
 dat = dat[1:,0:4]
 
-#pd.read_csv('C:\Users\jgapper\Desktop\CSDS\CS530\Assignment4\iris.csv', header=True)
 
 class cluster_f(object):
     def _init_(classes_ = 3):
